@@ -1,7 +1,9 @@
 package Model;
 
+import Controllers.MD5Coder;
+
 /**
- * Created by toshiba on 17.03.2017.
+ * Модель данных пользователя
  */
 public class Model {
     private int id;
@@ -20,6 +22,13 @@ public class Model {
         this.password = password;
     }
 
+    public Model(String name, String surName, String birthDate, String email, String password){
+        this.name = name;
+        this.surName = surName;
+        this.birthDate = birthDate;
+        this.email = email;
+        this.password = password;
+    }
 
 
     public String getName() {
